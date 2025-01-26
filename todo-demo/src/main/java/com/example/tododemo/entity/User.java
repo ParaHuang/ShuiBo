@@ -14,12 +14,11 @@ import java.util.Date;
 @Data       //== getters + setters + toString
 @AllArgsConstructor
 @NoArgsConstructor
-public class Todo {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY) //实现id自动增长
     private Long id;
-    private String content;
-    private Integer isFinished;
-    private Date time;
+    private String username;
+    private String password;
 
 }
